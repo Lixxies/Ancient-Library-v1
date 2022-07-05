@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="riddles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Ancient Library</title>
+</head>
+
+<body>
+    <main>
+
+            <div class="outer">
+                <div id="enter" class="text"></div>
+            </div>   
+
+            <div id="greeting" class="hidden">
+                <div class="phrases greetPhr hidden"></div>
+                <div class="skip">
+                    <button type="button">Next</button>
+                </div>
+            </div>
+
+            <div id="final" class="hidden">
+                <div class="phrases"></div>
+            </div>
+  
+            <div class="replyDiv hidden">  
+                <div id="reply">
+                    <div class="text">
+                        <div class="power"></div>
+                    </div>
+                    <div class="text">
+                        <div class="learning"></div>
+                    </div>
+                </div>     
+            </div> 
+
+            <div class="inputOuter hidden">
+                <div class="phrases seal"></div>
+                    <div class="input">
+                        <input type="text" id="answer" name="answer">
+                        <div id="btnDiv">
+                            <button class="break" type="button">Break the seal!</button>
+                            <button class="giveUp" type="button">Give up</button>
+                        </div>
+                    </div>
+            </div>
+      
+                <div id="scrollsOuter" class="hidden">
+                    <div id="scrollsDiv">
+                        <div id="firstLine" class="lineDiv">
+                            <div class="scroll"></div>
+                            <div class="scroll"></div>
+                        </div>
+                        <div id="secondLine" class="lineDiv">
+                            <div class="scroll"></div>
+                            <div class="scroll"></div>
+                            <div class="scroll"></div>
+                        </div>
+                        <div id="thirdLine" class="lineDiv">
+                            <div class="scroll"></div>
+                            <div class="scroll"></div>
+                            <div class="scroll"></div>
+                            <div class="scroll"></div>
+                        </div>
+                    </div>
+                </div> 
+
+    </main>
+    
+    <script src="riddles.js"></script>
+</body>
+</html>

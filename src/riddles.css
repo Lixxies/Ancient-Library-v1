@@ -1,0 +1,225 @@
+html, main, body, .replyDiv, .outer, #reply, #scrollsOuter, #scrollsDiv {
+    height: 100%;
+}
+
+body {
+    font-family: 'Berkshire Swash', cursive;
+    background-image: url(scrolls.avif);
+}
+
+#greeting, #final {
+    position: relative;
+    top: 200px;
+    width: 100%;
+}
+
+.greetPhr {
+    height: 400px;
+}
+
+.outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phrases {
+    width: 90%;
+    text-align: center;
+    font-size: 6em;
+    margin: auto;
+    color: #fff;
+    text-shadow:
+        0 0 7px #E23E57,
+        0 0 10px #E23E57,
+        0 0 21px #E23E57,
+        0 0 42px #311D3F,
+        0 0 82px #311D3F,
+        0 0 92px #311D3F,
+        0 0 102px #311D3F,
+        0 0 151px #311D3F;
+}
+
+#reply {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.power, .learning {
+    margin: auto;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #311D3F;
+    text-align: center;
+    width: 32%;
+    height: 50%;
+    font-size: 3.8em;
+    color: #e4536988;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #522546,
+              0 0 0.8rem #522546,
+              0 0 2.8rem #522546,
+              inset 0 0 1.3rem #522546;
+}
+
+.text:hover {
+    cursor: pointer;
+}
+
+#scrollsDiv {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lineDiv {
+    display: flex;
+    padding: 50px 10px;
+    justify-content: space-evenly;
+}
+
+.scroll {
+    width: 100px;
+    height: 100px;
+    background-color: #e7e2eb;
+    border-radius: 50%;
+    animation: pulsate 1s infinite alternate; 
+}
+
+.scroll:hover {
+    animation: none;
+    cursor: pointer;
+    box-shadow: 
+      0 0 7px #990000,
+      0 0 10px #990000,
+      0 0 21px #990000,
+      0 0 42px #990000,
+      0 0 82px #990000,
+      0 0 92px #990000,
+      0 0 102px #990000,
+      0 0 151px #990000;
+}
+
+.input {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#answer {
+    font-size: 2em;
+    height: 30px;
+}
+
+button {
+    margin-top: 40px;
+    border-radius: 0.5em;
+    border-width: medium;
+    border: 2px solid;
+    padding: 10px;
+    background-color: #311D3F;
+    color: #E23E57;
+    font-size: 3em;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+button:hover {
+    border-color: #fa939a;
+    color: #fa939a;
+    box-shadow: 0 0.5em 0.5em -0.4em #fa939a;
+    transform: translateY(-0.2em);
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.skip {
+    width: fit-content;
+    position: relative;
+    top: 5em;
+    margin: auto;
+}
+
+.break {
+    margin-right: 20px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.hidden {
+    display: none;
+}
+
+.bgChange {
+    background-image: none;
+    background-color: black;
+}
+
+
+@media (max-width: 1600px) {
+    .text {
+        font-size: 3.5em;
+    }
+}
+
+@media (max-width: 1460px) {
+    .text {
+        font-size: 3em;
+    }
+    .phrases {
+        font-size: 4em;
+    }
+    .scroll {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .text, button {
+        font-size: 2.5em;
+    }
+    .phrases {
+        font-size: 3.5em;
+    }
+}
+
+
+@keyframes pulsate {
+    100% {
+      box-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #E23E57,
+        0 0 80px #E23E57,
+        0 0 90px #E23E57,
+        0 0 100px #E23E57,
+        0 0 150px #E23E57;
+    }
+    0% {
+      box-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px #E23E57,
+        0 0 45px #E23E57,
+        0 0 55px #E23E57,
+        0 0 70px #E23E57,
+        0 0 80px #E23E57;
+    }
+  }
